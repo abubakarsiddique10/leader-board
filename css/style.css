@@ -27,7 +27,10 @@ body {
 /* header style start  */
 header {
     background: #562EFF;
-    padding: 20px 0;
+    padding: 18px 0;
+    margin-bottom: 35px;
+    position: sticky;
+    top: 0;
 }
 .flexible-container {
     display: flex;
@@ -98,7 +101,7 @@ hr {
     display: flex;
     align-items: center;
 }
-.blog-info h3 {
+.blog-info h3, .course .title {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 6px;
@@ -108,4 +111,60 @@ hr {
 }
 .blog-info a {
     text-decoration: none;
+}
+
+/* latast course style start */
+#latast-course {
+    margin-bottom: 20px;
+}
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(252px,1fr));
+    grid-column-gap: 24px;
+}
+.courses .course {
+    border-radius: 13px;
+    padding: 13px;
+    box-shadow: 0px 5.342289924621582px 13.35572338104248px 0px #0000000D;
+}
+.course .thumbail img {
+    width: 224px;
+    height: 104;
+    margin-bottom: 20px;
+}
+.course span {
+    color: #ED6B4F
+}
+.course-duration {
+    display: flex;
+    align-items: center;
+}
+.course-duration .rating {
+    margin: 0 30px 0 10px;
+    font-size: 14px;
+    padding-top: 4;
+}
+.course-duration .stars i {
+    color: #FFC014;
+    font-size: 12px;
+}
+.course-duration .stars i:last-child{
+    color: #AEAEAE
+}
+.course-duration .duration {
+    padding: 5px 8px;
+    border-radius: 15px;
+    background-color: #FFE4E8;
+    display: flex;
+    align-items: center;
+}
+.course-duration .duration i {
+    font-size: 20px;
+    color: #FF4A60;
+    margin-right: 5px;
+}
+.course-duration .duration span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FF4A60;
 }

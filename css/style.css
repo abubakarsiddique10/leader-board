@@ -168,3 +168,33 @@ hr {
     font-weight: 500;
     color: #FF4A60;
 }
+
+
+/* responsive for mobile */
+@media only screen and (max-width: 668px){
+    header .container {
+        padding: 0 30px;
+    }
+    .section-title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #562EFF;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    .top-players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .top-players .player {
+        justify-self: center;
+    }
+    .blogs .single-blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+}

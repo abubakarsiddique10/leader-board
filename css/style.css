@@ -196,5 +196,21 @@ hr {
         align-items: center;
         margin-bottom: 20px;
     }
-
+    .courses {
+        grid-row-gap: 24px;
+    }
+}
+/* responsive for teblet */
+@media only screen and (max-width: 768px) {
+    header .container {
+        padding: 0 33px;
+    }
+    .thumbail img {
+        width: 160px;
+        height: 100px;
+    }
+    .blog-info h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
 }
